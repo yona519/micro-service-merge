@@ -1,0 +1,154 @@
+<main th:fragment="Project" > 
+    <!-- <div style="height: 10vh; width: 100%; position: fixed; top: 0; z-index: -999999;">
+        <div th:replace="~{fragments/BackgroundSvg :: BackgroundSvg}"></div>
+    </div> -->
+
+    <div class="main-section left"  style="height: max-content; "> 
+        <a th:href="@{/user/101}">CLICK TO GO TO USER PAGE</a>
+        <div class="field project-name">
+            <p class="field-title">Project Name : </p>
+            <p class="field-info" th:text="${projectInfo.proj_name}"></p>
+        </div>
+        <div class="field project-add-infos d-flex flex-row gap-3">
+            <div class="field d-flex flex-row align-items-center justify-content-center">
+                <p class="field-duration-title"> Project code : <span class="fw-bolder"
+                        th:text="${projectInfo.proj_code}"></span></p>
+            </div>
+            <div class="field d-flex flex-row align-items-center justify-content-center">
+                <p class="field-duration-title"> Project status : <span class="fw-bolder"
+                        th:text="${status.status_code}"></span></p>
+            </div>
+        </div>
+        <div class="field client-name">
+            <p class="field-title">Client : </p>
+            <p class="field-info" th:text="${clientName.client_name}"></p>
+        </div>
+        <div class="field duration">
+            <p class="field-title">Project Duration : </p>
+            <div class="field-info-date-container">
+                <div class="field-info-date start-date">
+                    <p class="field-duration-title"> Start Date : <span class="fw-bolder"
+                            th:text="${projectInfo.start_date}"></span></p>
+                </div>
+                <div class="field-info-date end-date">
+                    <p class="field-duration-title"> End Date : <span class="fw-bolder"
+                            th:text="${projectInfo.end_date}"></span></p>
+                </div>
+            </div>
+        </div>
+        <div class="field project-manager">
+            <p class="field-title"> Project Manager : </p>
+            <div class="field-info-chip-container">
+                <p class="field-info-chip" th:each="manager_name:${projManager}" th:text="${manager_name.manager_name}">
+                </p>
+            </div>
+        </div>
+        <div class="field members">
+            <p class="field-title"> Members : </p>
+            <div class="field-info-chip-container">
+                <p class="field-info-chip" th:each="member_name:${members}" th:text="${member_name.member_name} "> </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-section right">
+        <div class="field dev-type">
+            <p class="field-title"> Development Type : </p>
+            <div class="field-info-chip-container">
+                <p class="field-info-chip" th:each="type:${devType}" th:text="${type.dev_type_id}"> </p>
+            </div>
+        </div>
+        <div class="field dev-phase">
+            <p class="field-title"> Development Phase : </p>
+            <div class="field-info-chip-container">
+                <p class="field-info-chip" th:each="phase:${devPhase}" th:text="${phase.dev_phase_name}"> </p>
+            </div>
+        </div>
+        <div class="field technologies">
+            <p class="field-title"> Technologies : </p>
+            <div class="field-info-chip-container">
+                <p class="field-info-chip" th:each="tech:${tech}" th:text="${tech.tech_name}"></p>
+            </div>
+        </div>
+        <div class="field description">
+            <p class="field-title title-description"> Project Description : </p>
+            <p th:text="${projectInfo.proj_desc}"></p>
+            <!-- <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt eveniet error veritatis pariatur
+                praesentium natus ducimus temporibus, omnis ipsa vero consequatur eum aliquid facilis laudantium
+                eligendi odio ad expedita explicabo odit fuga? Odio fugiat expedita maiores velit totam, nesciunt
+                necessitatibus laudantium placeat ipsum. Nesciunt sequi eligendi consequatur provident illo! Unde,
+                blanditiis et facere exercitationem ab dolores debitis rem ratione laboriosam veritatis consequatur
+                excepturi eligendi, modi ad fugit adipisci pariatur quaerat culpa repellat repellendus ex! Nisi
+                recusandae ex veniam commodi quaerat perferendis dolore delectus tenetur, cupiditate aut vel. Doloribus
+                consectetur ex soluta corrupti tenetur voluptas aperiam sunt laboriosam repellendus unde! Minima sint
+                animi nihil eaque. Iure, quos iste nihil at qui ipsa id, dicta illo dignissimos minus esse atque impedit
+                amet quibusdam. Illo exercitationem quasi iusto necessitatibus rem quam deleniti ipsam eius assumenda
+                consequuntur reiciendis itaque distinctio, ipsum odit? Esse voluptatibus, obcaecati praesentium
+                provident, non pariatur omnis velit earum debitis impedit est maxime quis facere architecto et corrupti.
+                Inventore suscipit blanditiis assumenda ullam, ducimus aliquam fuga quis ratione, iusto autem eum ipsa,
+                cumque dolorum sapiente? Facilis eveniet repellendus natus molestias reprehenderit facere repudiandae
+                inventore ducimus, delectus quos velit sint eum nulla sed culpa tempore pariatur totam asperiores labore
+                voluptatem. Hic consequuntur distinctio soluta officiis quisquam nihil aliquam minus ea, atque totam
+                dolore consectetur et nostrum ipsam iure at eaque maxime dignissimos corrupti ipsa molestias iste
+                placeat. Perferendis consectetur explicabo, nulla et iure accusamus laboriosam fugiat harum temporibus
+                quasi ad, tempore, cupiditate blanditiis. Quis velit consequuntur, necessitatibus quo reprehenderit
+                repellendus. Repellat ipsum reiciendis quibusdam sit delectus dicta, odio tempora error deserunt
+                doloremque nemo fugiat sequi quo iste optio voluptatibus aliquam provident! Voluptatibus saepe nam eum
+                quas mollitia natus ad quos nulla quia? Eum quas esse laudantium. Voluptatibus impedit, provident qui
+                eaque corrupti cum odit dicta a molestiae facere atque incidunt ullam est corporis voluptatem possimus
+                debitis eveniet soluta illo natus explicabo similique. Sapiente ea veritatis nostrum architecto soluta,
+                ducimus nam ad harum possimus deleniti cum repellendus voluptatum quas error illum distinctio non fugit
+                totam minima amet repellat optio eaque quisquam delectus? Deleniti maxime corporis quidem odio
+                necessitatibus fugiat illum fuga vel. Suscipit esse, in alias reprehenderit soluta laboriosam libero
+                ratione. Explicabo, repellendus hic cum, tenetur ea unde delectus maiores libero ipsum perspiciatis
+                molestias natus? Asperiores ut incidunt reiciendis minus iusto sapiente nihil aspernatur aperiam modi.
+                Laudantium consequuntur dolorum blanditiis qui deleniti ipsam, quaerat temporibus sunt at, cum officiis.
+                Assumenda ipsum ducimus incidunt nobis molestias ad magnam repellendus architecto iste dolores eligendi,
+                laboriosam possimus cupiditate dolorum, perspiciatis culpa rerum vero, numquam nihil! Harum porro
+                consectetur exercitationem dolor fugiat vitae non, voluptatem possimus magnam repudiandae nisi ex labore
+                laudantium ullam minima tempora necessitatibus saepe alias repellat vel. Impedit dicta consequuntur
+                fugiat velit dignissimos exercitationem magni nisi libero consequatur dolore. Modi distinctio illum,
+                quibusdam deserunt et quos voluptate est veniam voluptatum provident ab veritatis esse ducimus dolores
+                tempora quidem id numquam maiores ipsam sint, rem dolorem perspiciatis. Deleniti sunt sit possimus,
+                exercitationem distinctio quos assumenda libero facere. Recusandae id non ab deleniti facere totam qui,
+                maxime laboriosam blanditiis assumenda dolorum placeat magnam rerum at sed eum ex nemo eligendi. Quia
+                quod beatae facere molestias perspiciatis est deserunt dignissimos corrupti? Repellendus aperiam
+                distinctio possimus asperiores a eos numquam quod nisi! Magnam ea tempore perferendis sint ad! In sed
+                obcaecati exercitationem iusto architecto? Totam sed blanditiis facilis eaque laboriosam sunt magni
+                repudiandae quasi fuga nemo quos deleniti perspiciatis minima obcaecati nam est, quod odio officiis.
+                Perferendis, magnam quisquam exercitationem vitae ea ex consequatur accusamus nihil reprehenderit
+                molestiae recusandae placeat porro suscipit. Doloribus corrupti deleniti est consequuntur, sint
+                provident maxime esse laudantium perferendis fugit impedit similique expedita, enim eius a sapiente.
+                Numquam vel porro eveniet, itaque impedit repudiandae quod quasi expedita ab omnis placeat, soluta
+                dolorum exercitationem esse nisi tenetur voluptatem. Aliquam a neque, nostrum quis maiores laborum
+                doloremque maxime sequi nulla laboriosam cumque in quisquam, officia ullam rerum labore porro qui
+                molestias temporibus vitae provident alias excepturi, architecto quasi! Earum mollitia saepe possimus
+                corporis et. Asperiores voluptatibus repellat tempore. Dolores dolorem cumque deleniti, quibusdam facere
+                beatae tempore voluptas sequi ut, alias praesentium eius vitae! Harum minus ipsam, perspiciatis nobis
+                aut mollitia reprehenderit distinctio deserunt vel obcaecati dolores possimus atque ex nesciunt
+                doloribus totam iste quia quaerat amet quidem. Minus asperiores omnis, rerum alias necessitatibus iusto
+                ea exercitationem est, labore fugit repellendus, laborum in unde nobis ducimus expedita debitis earum
+                dolor nostrum esse aliquam voluptatibus! Nam, quo deserunt officia ducimus at eos non unde, itaque
+                temporibus iure explicabo blanditiis dolore architecto ullam quibusdam animi illo consectetur veritatis,
+                eligendi porro. Aut dolores quae cupiditate voluptatibus, cum eius ab similique iusto exercitationem
+                tenetur expedita distinctio quos magnam, velit dolorem odio quia eligendi, voluptate earum aliquid
+                nostrum. Minima laboriosam quaerat autem ipsam quo blanditiis ab soluta repudiandae ratione doloremque,
+                natus accusantium fugit excepturi perferendis porro reiciendis eum sint quam eveniet sed et saepe vel
+                unde distinctio. Eum dolorum cumque atque illum, praesentium fugit sapiente quisquam velit suscipit
+                labore porro natus ab voluptate, a quae? Eos alias illum error totam voluptas et libero qui ut. Porro
+                id, repudiandae laboriosam recusandae aliquid nostrum, ullam officiis quibusdam minima natus, aspernatur
+                molestias cupiditate odit cumque repellendus! Consequuntur fuga beatae deleniti corporis quod, tempore
+                nam asperiores, ratione consectetur doloremque nesciunt odit sit quo voluptates neque voluptatibus est
+                facilis ea dolorum placeat rem, hic quisquam voluptatum debitis! Dolor fugit tenetur impedit, hic
+                sapiente molestias quam odio voluptate consectetur ratione quisquam, eaque quae maiores laborum unde
+                natus qui eligendi ipsa non veritatis! Voluptatibus quisquam ratione optio fuga reprehenderit, quae
+                natus assumenda beatae officiis veritatis illo iusto facere ex! Libero suscipit quasi labore sit debitis
+                aliquid reiciendis ratione odio. Molestias accusamus rem provident minima? Necessitatibus perspiciatis
+                at incidunt error. Soluta repudiandae expedita, voluptatibus dicta dolorem dolores rem blanditiis
+                recusandae, mollitia reprehenderit aliquam iure excepturi aut deleniti quo et qui doloribus, provident
+                voluptas facere sunt delectus incidunt necessitatibus laborum? Impedit architecto voluptatum vero
+                excepturi illum totam tempora magni eaque deleniti cumque minus illo soluta sed maxime, libero culpa ut
+                possimus unde, quis sint consequatur, aspernatur ratione cum. Sapiente, exercitationem ratione.</p> -->
+        </div>
+    </div>
+</main>
