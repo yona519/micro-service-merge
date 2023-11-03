@@ -56,7 +56,7 @@
     flex-direction: column;
     /* border: 1px solid green;  */
     border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
     /* lalagyan ng radius */
 }
 
@@ -108,7 +108,7 @@
     flex-direction: column;
     /* border: 1px solid black; */
     border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
 .desc-title {
@@ -145,7 +145,7 @@
     width: 100%; 
     /* border: 1px solid red; */
     border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
 .client-title {
@@ -182,7 +182,7 @@
     width: 49.5%; 
     height: 100%;
     border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
 .manager-title {
@@ -208,7 +208,7 @@
     width: 49.5%; 
     height: 100%;
     border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
 .member-title {
@@ -242,7 +242,7 @@
     /* border: 1px solid red;  */
     height: 45%;
     border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
 .accordion-button:not(.collapsed) {
