@@ -51,12 +51,6 @@ font-family: "Varela", sans-serif;
     padding: 15px;
 }
 
-.main-form-container {
-    display: flex; 
-    justify-content: center;
-    /* border: 1px solid blue; */
-}
-
 .form-container {
     display: flex; 
     /* justify-content: space-between;  */
@@ -81,23 +75,35 @@ font-family: "Varela", sans-serif;
     margin-left: 10px;
     padding-top: 2px;
     font-family: "Varela", sans-serif;
+    color: white;
 }
 
 .custom-title {
-    margin: 20px; 
-    display: flex; 
-    justify-content: center;
-    font-family: "Varela", sans-serif;    
+    height: 8%;
+    padding: 1%;
+    background-color: white;
+    margin-bottom: 10px;
+    /* border-radius: 20px; */
+    /* border: 1px solid blue; */
+    background-color: #19507D;
+    border-top-right-radius:  10px;
+    border-top-left-radius:  10px;
 }
 
 
 /* PROFILE INFO */
+.profile-form-container {
+    display: flex; 
+    justify-content: center;
+    /* border: 1px solid blue; */
+}
+
 .profile-card {
     box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
     rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
     rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
-    border-radius: 20px;
-    padding: 5%;
+    border-radius: 10px;
+    /* padding: 5%; */
     width: 90%; 
     height: 100%;
     background-color: #ffffff;
@@ -141,7 +147,6 @@ font-family: "Varela", sans-serif;
     margin-top: 15px;
     /* box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px; */
     border-radius: 5px;
-    font-family: 'Alegreya Sans', sans-serif;
     font-weight: bold;
 }
 
@@ -155,12 +160,19 @@ font-family: "Varela", sans-serif;
 
 
 /* EMPLOYEE INFO */
+.employee-form-container {
+    display: flex; 
+    justify-content: center;
+    margin-top: 10px;
+    /* border: 1px solid blue; */
+}
+
 .employee-card {
     box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
     rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
     rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
-    border-radius: 20px;
-    padding: 2%;
+    border-radius: 10px;
+    /* padding: 2%; */
     width: 90%; 
     height: 50%;
     background-color: #ffffff;
@@ -174,7 +186,6 @@ font-family: "Varela", sans-serif;
     margin-top: 5px;
     /* box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px; */
     border-radius: 5px;
-    font-family: 'Alegreya Sans', sans-serif;
 }
 
 .emp-value-font {
@@ -196,10 +207,14 @@ font-family: "Varela", sans-serif;
 }
 
 .employee-info{
-    height: 15%;
-    background-color: white;
-    border-radius: 20px;
+    height: 17%;
+    padding: 1%;
+    /* background-color: white; */
+    /* border-radius: 20px; */
     /* border: 1px solid blue; */
+    background-color: #19507D;
+    border-top-right-radius:  10px;
+    border-top-left-radius:  10px;
 }
 
 .accordion {
@@ -241,19 +256,20 @@ font-family: "Varela", sans-serif;
     rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
     rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
     background-color: #ffffff;
-    border-radius: 20px;
+    border-radius: 10px;
     width: 90%; height: 50%;
-    padding: 2%;
+    /* padding: 2%; */
 }
 
 .project-info{
-    height: 15%;
-    background-color: white;
-    /* border: 1px solid brown; */
-
+    height: 17%;
+    padding: 1%;
+    /* background-color: white; */
     /* border-radius: 20px; */
-    /* position: sticky; */
     /* border: 1px solid blue; */
+    background-color: #19507D;
+    border-top-right-radius:  10px;
+    border-top-left-radius:  10px;
 }
 
 .proj-list-container {
@@ -263,8 +279,9 @@ font-family: "Varela", sans-serif;
     /* border: 1px solid blue; */
     border-radius: 5px;
     width: 100%;
-    height: 78%;
+    /* height: 78%; */
     height: 80%;
+    margin-top: 10px;
     /* margin-bottom: 20px; */
     /* display: contents;
     /* justify-content: center; */

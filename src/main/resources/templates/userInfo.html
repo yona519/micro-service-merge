@@ -10,21 +10,32 @@
 
         <!-- CSS -->
         <link rel="stylesheet" href="/styles/userStyles.css">
+    <link rel="stylesheet" th:href="@{/styles/topNavStyles.css}">
 
         <div th:replace= "~{fragments/header :: myheader}"></div>
     </head>
 
-    <body style="height: 100vh; width: 100%; display: flex; flex-direction: column; align-items: center; border:1px solid red">
+    <body style="height: 100vh; width: 100%; display: flex; flex-direction: column; align-items: center;">
        
         <!-- BACKGROUND -->
-        <div style="height: 10vh; width: 100%; position: fixed; top: 0; z-index: -99;">
+        <!-- <div style="height: 10vh; width: 100%; position: fixed; top: 0; z-index: -99;">
             <div  th:replace="~{fragments/user_bg :: userBackground}" ></div>
-        </div>
+        </div> -->
 
         <header style="height: 10%; width: 95%;">
-            <h1>Top Nav</h1>
+            <div th:replace= "~{fragments/TopNav :: TopNav}"></div>
+            <!-- <Typography style="text-align: center; font-weight: bold">
+                TOP NAV
+            </Typography> -->
         </header>
     
+        <div style="display: flex; justify-content: flex-start; width: 95%; padding-left: 1%;">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item active" aria-current="page">User</li>
+              </ol>
+            </nav>
+        </div>
     
         <main style="height: 85%;width: 95%; margin-top: 1%;display: flex; justify-content: center;">
             <div  th:replace="~{fragments/view_user :: view}"></div>

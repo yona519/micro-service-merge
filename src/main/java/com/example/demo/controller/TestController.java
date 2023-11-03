@@ -1,6 +1,7 @@
 package com.example.demo.controller;
 
 import java.util.List;
+import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -25,5 +26,15 @@ public class TestController {
     @GetMapping("/{emp_id}")
     public UserInfoOutput testApi(@PathVariable String emp_id) {
         return userService.getUserById(emp_id);
+    }
+
+    @GetMapping("/tech/{projId}")
+    public List<Map<String,Object>> techApi(@PathVariable String projId) {
+        return projectService.getAllTechnologiesOfProject(projId);
+    }
+
+    @GetMapping("/devPhase/{projId}")
+    public List<Map<String,Object>> phaseApi(@PathVariable String projId) {
+        return projectService.getAllPhasesOfProject(projId);
     }
 }
