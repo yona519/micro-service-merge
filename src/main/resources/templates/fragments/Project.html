@@ -1,13 +1,23 @@
-<!-- <a th:href="@{/user/101}">CLICK TO GO TO USER PAGE</a> -->
+<a th:href="@{/user/101}">CLICK TO GO TO USER PAGE</a>
 <div th:fragment="Project" class="frag">
     <!-- CARD 1 -->
-    <div class="main-card-container1">
-        <div class="container1">
+    <div class="main-card-container1" style="border: 1px solid blue;">
+        <div class="container1"  style="border: 1px solid red;">
             <!-- PROJECT NAME -->
-            <div class="proj-text"> 
-                <Typography style="font-size: 30px; font-weight: bold;" th:text="${projectInfo.proj_name}"></Typography>
+            <!-- <div class="project-name">
+                <Typography style="font-size: 30px; color: white;">Project Name </Typography>
             </div>
-
+            <div class="proj-text" style="border: 1px solid red;"> 
+                <Typography style="font-size: 30px; font-weight: bold;" th:text="${projectInfo.proj_name}"></Typography>
+            </div> -->
+            <div class=".project-name-container"> 
+                <div class="project-title">
+                    <Typography style="font-size: 30px; color: white;">Project Name </Typography>
+                </div>
+                <div class="project-body">
+                    <Typography style="font-size: 30px;" th:text="${projectInfo.proj_name}"></Typography>
+                </div>
+            </div>
              <!-- PROJECT CODE/STATUS -->
             <div class="proj-code-status"> 
                 <Typography>Project code: 
