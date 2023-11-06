@@ -14,8 +14,8 @@
                     <!-- IMAGE -->
                     <div class="image-container">
                         <div class="card image-card">
-                            <img th:if="${userInfo.img_src != ''}" th:src="@{/images/__${userInfo.img_src}__}" class="card-img-center image-file" alt="User Image">
-                            <img th:if="${userInfo.img_src == ''}" th:src="@{/images/MaleDefaultProfile.jpg}" class="card-img-center image-file" alt="Default Image">
+                            <img th:if="${userInfo.img_src != null and userInfo.img_src != ''}" th:src="@{/images/__${userInfo.img_src}__}" class="card-img-center image-file" alt="User Image">
+                            <img th:if="${userInfo.img_src == null or userInfo.img_src == ''}" th:src="@{/images/MaleDefaultProfile.jpg}" class="card-img-center image-file" alt="Default Image">
                         </div>
                     </div>
     
