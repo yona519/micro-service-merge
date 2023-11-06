@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Sumana:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Varela&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Alegreya&family=Alegreya+SC&family=Alegreya+Sans&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap');
 
 /* fonts
 font-family: 'Alegreya', serif;
@@ -152,8 +153,9 @@ font-family: "Varela", sans-serif;
     font-size: large;
     margin-top: 15px;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
-    border-radius: 5px;
-    font-family: 'Alegreya Sans', sans-serif;
+    border-radius: 5px;    
+    font-family: 'Montserrat', sans-serif;
+
 }
 
 
@@ -189,7 +191,8 @@ font-family: "Varela", sans-serif;
     /* margin-top: 5px; */
     box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
     border-radius: 5px;
-    font-family: 'Alegreya Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+
 }
 
 .emp-value-container {
@@ -297,7 +300,8 @@ font-family: "Varela", sans-serif;
     display: flex;
     align-content: center;
     margin-top: -3.5px;
-    font-family: 'Alegreya Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+
     /* border: 1px solid black; */
 }
 
